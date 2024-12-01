@@ -50,16 +50,16 @@ def gpa(num):
 
 
 # Function to categorize the gpa (first class to second class)
-def gpa_stats(GPA):
-    if GPA >= 4.5:
+def gpa_stats(gpa):
+    if gpa >= 4.5:
         print(f'{gpa} - First Class')
-    elif 4.49 >= GPA >= 3.5:
+    elif 4.49 <= gpa >= 3.5:
         print(f'{gpa} - Second Class Upper')
-    elif 3.49 >= GPA >= 2.4:
+    elif 3.49 <= gpa >= 2.4:
         print(f'{gpa} - Second Class Lower')
-    elif 2.39 >= GPA >= 1.50:
+    elif 2.39 <= gpa >= 1.50:
         print(f'{gpa} - Third Class ')
-    elif 0.5 >= GPA >= 1.49:
+    elif 0.5 <= gpa >= 1.49:
         print(f'{gpa} - Probation')
     else:
         print(",..,..,.,")
