@@ -23,64 +23,54 @@ def gpa(num):
     if num >= 70:
         num = A
         return A
-
-
-    elif num >= 60 and num <= 69:
+    elif 60 <= num <= 69:
         num = B
         return B
-
-
-    elif num >= 50 and num <= 59:
+    elif 50 <= num <= 59:
         num = C
         return C
-
-
-    elif num >= 40 and num <= 49:
+    elif 40 <= num <= 49:
         num = D
         return D
-
-
-    elif num >= 0 and num <= 39:
+    elif 0 <= num <= 39:
         num = F
         return F
-
-
     else:
         print(".......")
 
 
 # Function to categorize the gpa (first class to second class)
-def gpa_stats(GPA):
-    if GPA >= 4.5:
-        print(str(GPA) + "- First class")
-    elif 4.49 <= GPA >= 3.5:
-        print(str(GPA) + "- Second class upper ")
-    elif 3.49 <= GPA >= 2.4:
-        print(str(GPA) + "- Second class lower  ")
-    elif 2.39 <= GPA >= 1.50:
-        print(str(GPA) + "- Third class")
-    elif 0.5 <= GPA >= 1.49:
-        print(str(GPA) + "- Probation")
-        
+def gpa_stats(var):
+    if var >= 4.5:
+        print(f'{var} - First Class ')
+    elif 3.5 <= var <= 4.49:
+        print(f'{var} - Second Class Upper')
+    elif 2.5 <= var <= 3.49:
+        print(f'{var} - Second Class Lower')
+    elif 1.50 <= var <= 2.49:
+        print(f'{var} - Third Class ')
+    elif 0.5 <= var <= 1.49:
+        print(f'{var} - Probation ')
+    elif 0.0 <= var <= 0.49:
+        print(f'{var} - Probation 2')
     else:
-        print(GPA)
-        print(",..,..,.,")
+        print(f'{var} - error here')
 
 
-subject = [48, 16, 14, 18, 40, 16, 18, 44, 46, 48, 44]
+subject = [98, 76, 74, 98, 80, 86, 88,74, 76, 98, 74]
 subjectUnit = [3, 2, 1, 3, 2, 1, 3, 2, 2, 2, 1]
 
-subjectLimit = len(subject)
-numberLimit = 0
+subject_limit = len(subject)
+number_limit = 0
 totalSubUnit = 0
 totalSubProduct = 0
 try:
-    while numberLimit != subjectLimit:
-        numberLimit += 1
-        subject1 = subject[numberLimit]
-        subjectUnit1 = subjectUnit[numberLimit]
-        totalSubUnit += subjectUnit1
-        subjectData = gpa(subject1) * subjectUnit1
+    while number_limit != subject_limit:
+        number_limit += 1
+        subject1 = subject[number_limit]
+        subject_unit1 = subjectUnit[number_limit]
+        totalSubUnit += subject_unit1
+        subjectData = gpa(subject1) * subject_unit1
         totalSubProduct += subjectData
         gpa = float(totalSubProduct / totalSubUnit)
         gpa_stats(gpa)

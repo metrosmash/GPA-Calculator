@@ -23,46 +23,38 @@ def gpa(num):
     if num >= 70:
         num = A
         return A
-
-
-    elif num >= 60 and num <= 69:
+    elif 60 <= num <= 69:
         num = B
         return B
-
-
-    elif num >= 50 and num <= 59:
+    elif 50 <= num <= 59:
         num = C
         return C
-
-
-    elif num >= 40 and num <= 49:
+    elif 40 <= num <= 49:
         num = D
         return D
-
-
-    elif num >= 0 and num <= 39:
+    elif 0 <= num <= 39:
         num = F
         return F
-
-
     else:
         print(".......")
 
 
 # Function to categorize the gpa (first class to second class)
-def gpa_stats(gpa):
-    if gpa >= 4.5:
-        print(f'{gpa} - First Class')
-    elif 4.49 <= gpa >= 3.5:
-        print(f'{gpa} - Second Class Upper')
-    elif 3.49 <= gpa >= 2.4:
-        print(f'{gpa} - Second Class Lower')
-    elif 2.39 <= gpa >= 1.50:
-        print(f'{gpa} - Third Class ')
-    elif 0.5 <= gpa >= 1.49:
-        print(f'{gpa} - Probation')
+def gpa_stats(var):
+    if var >= 4.5:
+        print(f'{var} - First Class ')
+    elif 3.5 <= var <= 4.49:
+        print(f'{var} - Second Class Upper')
+    elif 2.5 <= var <= 3.49:
+        print(f'{var} - Second Class Lower')
+    elif 1.50 <= var <= 2.49:
+        print(f'{var} - Third Class ')
+    elif 0.5 <= var <= 1.49:
+        print(f'{var} - Probation ')
+    elif 0.0 <= var <= 0.49:
+        print(f'{var} - Probation 2')
     else:
-        print(",..,..,.,")
+        print(f'{var} -Typo Error ')
 
 
 subjectLimit = int(input('How many subjects did you register? '))
@@ -82,5 +74,5 @@ gpa_stats(gpa)
 
 print(" Thanks for using this open source script feel free to modify \n all credits to 'Metro'")
 print("press  any key to continue ......")
-# TO KEEP THE TERMINAL OPEN SO THE PRESON CAN CHECK THROUGH
+# TO KEEP THE TERMINAL OPEN SO THE PERSON CAN CHECK THROUGH
 input()
