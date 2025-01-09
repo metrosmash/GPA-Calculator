@@ -1,15 +1,24 @@
-<b>GPA Calculator<b>
+# GPA Calculator
 
-<b>Introduction</b> 
- <br>Calculator That Can Calculate The Gpa Of Students Specifcally those in fuoye  
- 
-<b> How To Use </b>
-    <br>Input your scores and details in the dialogue and await your score 
-    
-<b>PLEASE NOTE </b>
-   <br>If you have no Values to input : <b>(input zero)</b>
-   
-   <b>Future plans on the little project </b>
+A simple GPA Calculator application that allows users to calculate their Cumulative Grade Point Average (GPA) based on their course grades and corresponding course units.
+
+## Features
+
+- Add courses with grades and course units using a .csv file 
+- Calculate Cumulative GPA 
+
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/metrosmash/GPA-Calculator.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd GPA-Calculator
+    ```
+   <b>Future plans on this little project </b>
    <br> -add excel properties (the script is able to 
    scrape through an excel script and then use its data)
    <br> -add thinkter properties(GUI)
