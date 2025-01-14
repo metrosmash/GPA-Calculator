@@ -23,6 +23,10 @@ A simple GPA Calculator application that allows users to calculate their Cumulat
     pip install numpy
     pip install pandas
     ```
+4. To Run
+   ```sh
+   Python3 Gpa_calc_4.py
+   ```
 
 ## Description and how to use 
 
